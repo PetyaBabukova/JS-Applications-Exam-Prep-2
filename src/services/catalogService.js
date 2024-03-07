@@ -1,6 +1,6 @@
 import * as request from './requester.js';
 
-const baseUrl = 'http://localhost:3030/data/characters';
+const baseUrl = 'http://localhost:3030/data/cars';
 
 export const getAll = () => request.get(`${baseUrl}?sortBy=_createdOn%20desc`);
 
@@ -12,9 +12,7 @@ export const edit = (itemId, itemData) => request.put(`${baseUrl}/${itemId}`, it
 
 export const remove = (itemId) => request.del(`${baseUrl}/${itemId}`);
 
-export const search = (searchText)=> {
-    const query = encodeURIComponent(`name LIKE "${searchText}"`)
-    return request.get(`${baseUrl}?where=${query}`)
-}
-
-// export const like = (itemId)=>
+// export const search = (searchText)=> {
+//     const query = encodeURIComponent(`name LIKE "${searchText}"`)
+//     return request.get(`${baseUrl}?where=${query}`)
+// }

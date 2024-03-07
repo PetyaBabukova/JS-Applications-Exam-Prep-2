@@ -11,7 +11,7 @@ const loggedUsers = html`
 const guests = html`
 <div class="guest">
     <a href="/login">Login</a>
-    <a href="/registe">Register</a>
+    <a href="/register">Register</a>
   </div>
 `;
 
