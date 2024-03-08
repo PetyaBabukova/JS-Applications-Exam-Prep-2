@@ -12,7 +12,7 @@ const detailsTemplate = (item, isOwner) => html`
                 <p class="weight">Weight: ${item.weight} kg</p>
                 <p class="top-speed">Top Speed: ${item.speed} kph</p>
                 <p id="car-description">
-                ${item.abaout}</p>
+                ${item.about}</p>
               </div>
               <!--Edit and Delete are only for creator-->
               ${isOwner

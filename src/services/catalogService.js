@@ -12,7 +12,7 @@ export const edit = (itemId, itemData) => request.put(`${baseUrl}/${itemId}`, it
 
 export const remove = (itemId) => request.del(`${baseUrl}/${itemId}`);
 
-// export const search = (searchText)=> {
-//     const query = encodeURIComponent(`name LIKE "${searchText}"`)
-//     return request.get(`${baseUrl}?where=${query}`)
-// }
+export const search = (searchText)=> {
+    const query = encodeURIComponent(`model LIKE "${searchText}"`)
+    return request.get(`${baseUrl}?where=${query}`)
+}
